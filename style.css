@@ -1,0 +1,535 @@
+*{
+/*   border:1px solid; */
+  box-sizing:border-box;
+  vertical-align:top;
+  position:relative;
+  text-decoration: none;
+}
+.resume{
+  max-width:82em;
+  font-size:10px;
+  /*畫面至於中間*/
+  margin:0 auto;
+}
+.title{
+  font-size:4em;
+}
+/*top*/
+.top{
+  padding-top:5em;
+  margin:0.4em;
+}
+.left01,.right01{
+  float:left;
+}
+.button{
+  width:15.5em;
+  padding:1em;
+  margin-left:4em;
+  background-color:#dc6a6d;
+  text-align:center;
+  letter-spacing:1.5em;
+  position:absolute;
+  top:-1em;
+  padding-right: initial;
+}
+.mail,.line,.github{
+  font-size:3em;
+  color:white;
+}
+.mail:hover{
+  transform: scale(1.1,1.2);
+}
+.line:hover{
+  transform: scale(1.1,1.2);
+}
+.github:hover{
+  transform: scale(1.1,1.2);
+}
+h1{  
+  font-size:6em;
+  padding-left:0.6em;
+  margin-top:0.8em;
+}
+/*畫一條線*/
+.hr{
+  width:100%;
+  height:0.1em;
+  border-top:5px solid;
+  position:absolute;
+  left:-0.4em;
+  margin-top:0.5em;
+}
+.contact{
+  padding:2em 3em;
+}
+ul{
+  list-style-type:none;
+}
+.contact ul{
+  border-left:2px solid;
+  padding:0.9em; 
+  margin:1em;
+}
+.contact ul li{
+  font-size:1.8em;
+  letter-spacing:0.2em;
+  line-height:1.5em;
+}
+.contact ul li a:visited{
+  color:black;
+}
+.contact ul li a:hover{
+  color:#dc6a6d;
+}
+.pic1{
+  margin:1.5em auto;
+}
+.pic1 img{
+  display:block;
+  width:40em; 
+  height:auto;
+}
+
+/*middle*/
+.middle{
+  clear:both;
+}
+.middle .title{
+  position:absolute;
+  top:0.3em;
+}
+.content img{
+  float:left;
+  display:block;
+  width:15em;
+}
+.content{
+  font-size:1.5em;
+  letter-spacing:0.2em;
+  line-height:1.7em;
+  padding:1em 1.5em 0.5em 1.5em;
+  
+  background:#f9c158;
+  width:auto; height:auto;
+  position:absolute;
+  top:2.6em;
+  left:-2em;
+}
+.content p{
+  padding-top:1.2em;
+  padding-right:1.2em;
+}
+/*bottom*/
+.bottom{
+  margin:35em 0.4em 0.4em 0.4em;
+  clear:both;
+}
+.left03,.right03{
+  width:40.6em;
+  height:70em;
+  display:inline-block;
+  padding-left:1em; 
+}
+.title_bg{
+  background:#f9c158;
+  position:absolute;
+  top:2.9em;
+  left:-2em;
+  width:22.33em;
+  height:2.1em;
+}
+.title_hr{
+  width:0.1em;
+  height:63em;
+  border-left:3px solid;
+  position:absolute;
+  left:-0.5em;
+  top:2em;
+}
+.experience{
+  padding-top:1.5em;
+}
+.ex{
+  font-size:1.5em;
+}
+.date,.content01{
+  float:left;
+  padding:0.6em;
+}
+.date{
+  width:11em;
+  margin-top:1.4em;
+  letter-spacing:0.15em;
+}
+.content01{
+  width:14.3em;
+  line-height:1.8em;
+  letter-spacing:0.12em;
+}
+.skill{
+  margin:1em;
+  padding:1em;
+}
+h4{
+  font-size:1.6em;
+  letter-spacing:0.1em;
+  padding:0 1em;
+}
+.chart{
+  padding:0.2em;
+  margin:1em;
+  border:2px solid;
+  border-radius:0.3em;
+}
+.chart01,.chart02{
+  height:1.2em;
+  background-color:black;
+  border-radius:0.3em;
+}
+.chart01{
+  width:24.5em;
+}
+.chart02{
+  width:20em;
+}
+.adobe{
+  margin:auto 2em;
+}
+.adobe li{
+  float:left;
+  margin:0 1.8em;
+  width:12em;
+  list-style-type:none;
+}
+.adobe h4{
+  text-align:center;
+  padding:0.5em;
+}
+.circle{
+  height:10em; width:10em;
+  margin:1em auto;
+  position:relative;
+}
+.percentage{
+  font-size:1.5em;
+  width:5.3em; height:5.3em;
+  background-color:white;
+  border-radius:50%;
+  position:absolute;
+  left:0.7em; top:0.7em;
+  text-align:center;
+  line-height:5.6em;
+}
+/*最下層左右灰底*/
+.circle-lai,.circle-lps,.circle-lpr,.circle-lfl,.circle-r{
+  width:5em; height:10em;
+  background-color:#eee;
+  position:relative;
+  float:left;
+  overflow:hidden;
+}
+.circle-lai,.circle-lps,.circle-lpr,.circle-lfl{
+  border-radius:8em 0 0 8em;
+}
+.circle-r{
+  border-radius:0 8em 8em 0;
+}
+/*左半黑底*/
+/*ai*/
+.circle-lai:after{
+  content:"";
+  position:absolute;
+  display:block;
+  width:5em; height:10em;
+  border-radius:8em 0 0 8em;
+  background-color:black;
+  
+  transform-origin:right center;
+  transform:rotateZ(-65deg);
+}
+/*ps*/
+.circle-lps:after{
+  content:"";
+  position:absolute;
+  display:block;
+  width:5em; height:10em;
+  border-radius:8em 0 0 8em;
+  background-color:black;
+  
+  transform-origin:right center;
+  transform:rotateZ(-90deg);
+}
+/*pr*/
+.circle-lpr:after{
+  content:"";
+  position:absolute;
+  display:block;
+  width:5em; height:10em;
+  border-radius:8em 0 0 8em;
+  background-color:black;
+  
+  transform-origin:right center;
+  transform:rotateZ(-150deg);
+}
+/*flash*/
+.circle-lfl:after{
+  content:"";
+  position:absolute;
+  display:block;
+  width:5em; height:10em;
+  border-radius:8em 0 0 8em;
+  background-color:black;
+  
+  transform-origin:right center;
+  transform:rotateZ(-110deg);
+}
+/*右半黑底*/
+.circle-r:after{
+  content:"";
+  position:absolute;
+  display:block;
+  width:5em; height:10em;
+  border-radius:0 8em 8em 0;
+  background-color:black;
+  
+  transform-origin:left center;
+  transform:rotateZ(0deg);
+}
+
+
+/*媒體查詢*/
+@media screen and (max-width:852px) and (min-width:755px){
+  .resume{
+    font-size:18px;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  .contact {
+    padding: 2em 1em;
+  }
+  .contact ul li {
+    font-size: 1.3em;
+  }
+  .left01{
+    width:28em;
+  }
+  .pic1 img {
+    width:18em;
+    height: auto;
+    position:absolute;
+    top:2em;
+    left:-9em;
+  }
+  .content{
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+  .content img {
+    width: 10em;
+  }
+  .content p {
+    padding-left:1.8em;
+  }
+  .bottom{
+    margin-left:3em;
+  }
+  .left03, .right03 {
+    width: 37.6em;
+  }
+  .ex {
+    font-size: 1.2em;
+  }
+  .adobe {
+    margin: auto 0em;
+  }
+}
+@media screen and (max-width:755px) and (min-width:540px)  {
+  .resume{
+    font-size:16px;
+  }
+  h1 {
+    font-size: 6em;
+  }
+  .contact {
+    padding: 2em 1em;
+  }
+  .contact ul li {
+    font-size: 1.3em;
+  }
+  .left01{
+    width:28em;
+  }
+  .pic1 img {
+    width: 14em;
+    height: auto;
+    position: absolute;
+    top: 5em;
+    left: -10em;
+  }
+  .content{
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+  .content img {
+    width: 10em;
+  }
+  .content p {
+    padding-left:1.8em;
+  }
+  .bottom{
+    margin-left:2em;
+  }
+  .left03, .right03 {
+    width: 30em;
+  }
+  .ex{
+    font-size:1.5em;
+  }
+  .date, .content01 {
+    padding:0 0.6em;
+  }
+ .right03 .title_hr {
+    height:100em;
+  }
+  .chart01 {
+    width: 18.5em;
+  }
+  .chart02 {
+    width: 15.5em;
+  }
+  .adobe {
+    margin: auto 4em;
+  }
+}
+
+@media screen and (max-width:540px) and (min-width:350px) {
+  .resume{
+    font-size:12px;
+  }
+  h1 {
+    font-size: 6em;
+    padding-left: 0.2em;
+  }
+  .hr { 
+    left: -3.4em;
+  }
+  .contact {
+    padding: 2em 0;
+  }
+  .contact ul li {
+    font-size: 1.3em;
+  }
+  .left01{
+    width:26em;
+  }
+  .pic1 img {
+    width: 11em;
+    height: auto;
+    position: absolute;
+    top: 9em;
+    left: -10.5em;
+  }
+  .content{
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+  .content img {
+    width: 10em;
+  }
+  .content p {
+    padding-left:1.8em;
+  }
+  .bottom{
+    margin-left:2em;
+  }
+  .left03, .right03 {
+    width: 25em;
+  }
+  .ex{
+    font-size:1.5em;
+  }
+  .date, .content01 {
+    padding:0 0.6em;
+  }
+ .right03 .title_hr {
+    height:100em;
+  }
+  .chart01 {
+    width: 14.5em;
+  }
+  .chart02 {
+    width: 12.5em;
+  }
+  .adobe {
+    margin: auto 2em;
+  }
+}
+@media screen and (max-width:350px) and (min-width:250px) {
+  .resume{
+    font-size:10px;
+  }
+  h1 {
+    font-size: 5em;
+    padding-left: 0.2em;
+  }
+  .hr { 
+    left: -4.4em;
+  }
+  .contact {
+    padding: 2em 0;
+  }
+  .contact ul li {
+    font-size: 1.3em;
+  }
+  .left01{
+    width:26em;
+  }
+  .pic1 img {
+    width: 10em;
+    height: auto;
+    position: absolute;
+    top: 9em;
+    left: -14.5em;
+  }
+  .content{
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+  .content img {
+    width: 10em;
+  }
+  .content p {
+    padding-left:1.8em;
+  }
+  .bottom{
+    margin-left:1.5em;
+    margin-top: 35em;
+  }
+  .left03, .right03 {
+    width: 20em;
+  }
+  .ex{
+    font-size:1.5em;
+  }
+  .date, .content01 {
+    padding:0 0.6em;
+  }
+ .right03 .title_hr {
+    height:100em;
+  }
+  .chart01 {
+    width: 10.5em;
+  }
+  .chart02 {
+    width: 8.5em;
+  }
+  .adobe {
+    margin: auto -1em;
+  }
+}
